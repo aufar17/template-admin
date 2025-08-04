@@ -24,7 +24,6 @@
             <div class="page-header min-vh-75 mt-5 d-flex align-items-center justify-content-center ">
                 <div class="container">
                     <div class="row justify-content-center">
-                        <!-- Logo di atas card -->
                         <div class="col-12 text-center mb-3">
                             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/KYB_Corporation_company_logo.svg/2560px-KYB_Corporation_company_logo.svg.png"
                                 style="height: 60px; width: auto;">
@@ -72,41 +71,10 @@
                 </div>
             </div>
 
+            <x-footer></x-footer>
         </section>
     </main>
-    <!-- -------- START FOOTER 3 w/ COMPANY DESCRIPTION WITH LINKS & SOCIAL ICONS & COPYRIGHT ------- -->
-    <footer class="footer py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-8 mx-auto text-center mt-1">
-                    <p class="mb-0 text-secondary">
-                        Copyright © <script>
-                            document.write(new Date().getFullYear())
-                        </script> PT Kayaba Indonesia
-                    </p>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- -------- END FOOTER 3 w/ COMPANY DESCRIPTION WITH LINKS & SOCIAL ICONS & COPYRIGHT ------- -->
-    <!--   Core JS Files   -->
-    <script src="{{ asset('js/core/popper.min.js') }}"></script>
-    <script src="{{ asset('js/core/popper.min.js') }}"></script>
-    <script src="{{ asset('js/plugins/perfect-scrollbar.min.js') }}"></script>
-    <script src="{{ asset('js/plugins/perfect-scrollbar.min.js') }}"></script>
-    <script>
-        var win = navigator.platform.indexOf('Win') > -1;
-    if (win && document.querySelector('#sidenav-scrollbar')) {
-      var options = {
-        damping: '0.5'
-      }
-      Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
-    }
-    </script>
-    <!-- Github buttons -->
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
-    <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
-    <script src="../assets/js/soft-ui-dashboard.min.js?v=1.0.3"></script>
+    <x-script></x-script>
 </body>
 
 </html>
